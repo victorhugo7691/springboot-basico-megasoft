@@ -1,0 +1,84 @@
+br/com/megasoftgyn/projetoversao1/compra/Compra.java
+ br.com.megasoftgyn.projetoversao1.compra.Compra
+br/com/megasoftgyn/projetoversao1/compra/CompraCadastroItemDto.java
+ br.com.megasoftgyn.projetoversao1.compra.CompraCadastroItemDto
+br/com/megasoftgyn/projetoversao1/pessoa/PessoaApi.java
+ br.com.megasoftgyn.projetoversao1.pessoa.PessoaApi
+br/com/megasoftgyn/projetoversao1/profissao/Profissao_.java
+ br.com.megasoftgyn.projetoversao1.profissao.Profissao_
+br/com/megasoftgyn/projetoversao1/endereco/EnderecoRepository.java
+ br.com.megasoftgyn.projetoversao1.endereco.EnderecoRepository
+br/com/megasoftgyn/projetoversao1/compra/Compra_.java
+ br.com.megasoftgyn.projetoversao1.compra.Compra_
+br/com/megasoftgyn/projetoversao1/tipopessoa/TipoPessoaEnum.java
+ br.com.megasoftgyn.projetoversao1.tipopessoa.TipoPessoaEnum
+br/com/megasoftgyn/projetoversao1/bairro/Bairro.java
+ br.com.megasoftgyn.projetoversao1.bairro.Bairro
+br/com/megasoftgyn/projetoversao1/bairro/BairroService.java
+ br.com.megasoftgyn.projetoversao1.bairro.BairroService
+br/com/megasoftgyn/projetoversao1/excecao/ErroPadrao.java
+ br.com.megasoftgyn.projetoversao1.excecao.ErroPadrao
+br/com/megasoftgyn/projetoversao1/pessoa/PessoaRepository.java
+ br.com.megasoftgyn.projetoversao1.pessoa.PessoaRepository
+br/com/megasoftgyn/projetoversao1/itemcompra/ItemCompraRepository.java
+ br.com.megasoftgyn.projetoversao1.itemcompra.ItemCompraRepository
+br/com/megasoftgyn/projetoversao1/profissao/ProfissaoApi.java
+ br.com.megasoftgyn.projetoversao1.profissao.ProfissaoApi
+br/com/megasoftgyn/projetoversao1/compra/CompraService.java
+ br.com.megasoftgyn.projetoversao1.compra.CompraService
+br/com/megasoftgyn/projetoversao1/profissao/ProfissaoService.java
+ br.com.megasoftgyn.projetoversao1.profissao.ProfissaoService
+br/com/megasoftgyn/projetoversao1/excecao/ExcecaoController.java
+ br.com.megasoftgyn.projetoversao1.excecao.ExcecaoController
+br/com/megasoftgyn/projetoversao1/itemcompra/ItemDeCompra.java
+ br.com.megasoftgyn.projetoversao1.itemcompra.ItemDeCompra
+br/com/megasoftgyn/projetoversao1/profissao/ProfissaoDto.java
+ br.com.megasoftgyn.projetoversao1.profissao.ProfissaoDto
+br/com/megasoftgyn/projetoversao1/endereco/Endereco.java
+ br.com.megasoftgyn.projetoversao1.endereco.Endereco
+br/com/megasoftgyn/projetoversao1/itemcompra/ItemCompraService.java
+ br.com.megasoftgyn.projetoversao1.itemcompra.ItemCompraService
+br/com/megasoftgyn/projetoversao1/compra/CompraApi.java
+ br.com.megasoftgyn.projetoversao1.compra.CompraApi
+br/com/megasoftgyn/projetoversao1/pessoa/Pessoa.java
+ br.com.megasoftgyn.projetoversao1.pessoa.Pessoa
+br/com/megasoftgyn/projetoversao1/pessoa/Pessoa_.java
+ br.com.megasoftgyn.projetoversao1.pessoa.Pessoa_
+br/com/megasoftgyn/projetoversao1/pessoa/PessoaDto.java
+ br.com.megasoftgyn.projetoversao1.pessoa.PessoaDto
+br/com/megasoftgyn/projetoversao1/profissao/Profissao.java
+ br.com.megasoftgyn.projetoversao1.profissao.Profissao
+br/com/megasoftgyn/projetoversao1/itemcompra/ItemCompraApi.java
+ br.com.megasoftgyn.projetoversao1.itemcompra.ItemCompraApi
+br/com/megasoftgyn/projetoversao1/bairro/BairroRepository.java
+ br.com.megasoftgyn.projetoversao1.bairro.BairroRepository
+br/com/megasoftgyn/projetoversao1/endereco/EnderecoService.java
+ br.com.megasoftgyn.projetoversao1.endereco.EnderecoService
+br/com/megasoftgyn/projetoversao1/itemcompra/ItemDeCompra_.java
+ br.com.megasoftgyn.projetoversao1.itemcompra.ItemDeCompra_
+br/com/megasoftgyn/projetoversao1/endereco/EnderecoApi.java
+ br.com.megasoftgyn.projetoversao1.endereco.EnderecoApi
+br/com/megasoftgyn/projetoversao1/bairro/Bairro_.java
+ br.com.megasoftgyn.projetoversao1.bairro.Bairro_
+br/com/megasoftgyn/projetoversao1/bairro/BairroDto.java
+ br.com.megasoftgyn.projetoversao1.bairro.BairroDto
+br/com/megasoftgyn/projetoversao1/itemcompra/ItemDeCompraDto.java
+ br.com.megasoftgyn.projetoversao1.itemcompra.ItemDeCompraDto
+br/com/megasoftgyn/projetoversao1/compra/CompraRepository.java
+ br.com.megasoftgyn.projetoversao1.compra.CompraRepository
+br/com/megasoftgyn/projetoversao1/bairro/BairroApi.java
+ br.com.megasoftgyn.projetoversao1.bairro.BairroApi
+br/com/megasoftgyn/projetoversao1/pessoa/PessoaService.java
+ br.com.megasoftgyn.projetoversao1.pessoa.PessoaService
+br/com/megasoftgyn/projetoversao1/endereco/Endereco_.java
+ br.com.megasoftgyn.projetoversao1.endereco.Endereco_
+br/com/megasoftgyn/projetoversao1/pessoa/PessoaCadastroDto.java
+ br.com.megasoftgyn.projetoversao1.pessoa.PessoaCadastroDto
+br/com/megasoftgyn/projetoversao1/profissao/ProfissaoRepository.java
+ br.com.megasoftgyn.projetoversao1.profissao.ProfissaoRepository
+br/com/megasoftgyn/projetoversao1/SpringbootBasicoApplication.java
+ br.com.megasoftgyn.projetoversao1.SpringbootBasicoApplication
+br/com/megasoftgyn/projetoversao1/utilidades/GeradorDeRelatorio.java
+ br.com.megasoftgyn.projetoversao1.utilidades.GeradorDeRelatorio
+br/com/megasoftgyn/projetoversao1/endereco/EnderecoDto.java
+ br.com.megasoftgyn.projetoversao1.endereco.EnderecoDto

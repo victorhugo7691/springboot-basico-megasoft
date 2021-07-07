@@ -1,0 +1,94 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url 'https://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/'
+        }
+        maven {
+            url 'http://jasperreports.sourceforge.net/maven2'
+        }
+        maven {
+            url 'http://repository.jboss.org/maven2/'
+        }
+    }
+}
+
+plugins {
+	id 'org.springframework.boot' version '2.4.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'eclipse'
+	id 'com.github.gmazelier.jasperreports' version '0.3.2'
+}
+
+group = 'br.com.megasoftgyn'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+	jcenter()
+    maven {
+            url 'https://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/'
+        }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'org.postgresql:postgresql'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    
+    // Dependências para geração dos Meta Modelos 
+    annotationProcessor group: 'org.springframework.boot', name: 'spring-boot-configuration-processor'
+    annotationProcessor group: 'org.hibernate',            name: 'hibernate-jpamodelgen',              version: '5.4.30.Final'
+	
+	// Dependências para Geração de Relatórios
+    implementation      group: 'net.sf.jasperreports',     name: 'jasperreports',                      version: '6.7.1'
+    implementation      group: 'net.sf.jasperreports',     name: 'jasperreports-fonts',                version: '6.0.0'	
+    
+    // https://mvnrepository.com/artifact/javax.validation/validation-api
+	implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+    }
+    
+    test {
+	useJUnitPlatform()
+}
+
+// Configuração para geração dos Metamodelos
+	def JPA_MODELGEN_PATH='src/jpaModelgen/java'
+    
+	sourceSets {
+    main {
+        java {
+            srcDir JPA_MODELGEN_PATH
+        	}
+    	}
+	}
+
+	task cleanJpaModelgen {
+    doLast {
+        	project.delete(JPA_MODELGEN_PATH)
+    	}
+	}
+
+	tasks.withType(JavaCompile) {
+    def jpaModelgenDir = file(JPA_MODELGEN_PATH)
+    options.annotationProcessorGeneratedSourcesDirectory = jpaModelgenDir
+    outputs.dir(jpaModelgenDir)
+}
+
+	clean.dependsOn ('cleanJpaModelgen')
+	compileJava.dependsOn ('cleanJpaModelgen')
+	
+	// Configuração para geração dos relatórios do Jasper na pasta correta relativa ao pacote.
+	jasperreports {
+    	srcDir = file('src/main/resources')
+    	outDir = file('src/main/resources')
+    	useRelativeOutDir = true
+	}
